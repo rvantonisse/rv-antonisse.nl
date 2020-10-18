@@ -20,6 +20,7 @@
   },
   "homepage": "https://rv-antonisse.nl",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.0"
+    "@11ty/eleventy": "^0.11.0",
+    "parcel-bundler": "^1.12.4"
   }
 }
