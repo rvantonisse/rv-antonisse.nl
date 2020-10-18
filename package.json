@@ -5,6 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
+    "build:css": "postcss ./src/_assets/css/stylesheet.css -o ./src/_assets/css/_build_stylesheet.css",
     "build": "eleventy --output=./build",
     "dev": "eleventy --output=./_dev --serve"
   },
@@ -21,6 +22,9 @@
   "homepage": "https://rv-antonisse.nl",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
-    "parcel-bundler": "^1.12.4"
+    "autoprefixer": "^10.0.1",
+    "postcss": "^8.1.1",
+    "postcss-cli": "^8.1.0",
+    "postcss-preset-env": "^6.7.0"
   }
 }
