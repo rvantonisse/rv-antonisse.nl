@@ -5,7 +5,7 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss ./src/_assets/css/stylesheet.css -o ./src/_assets/css/_build_stylesheet.css",
+    "build:css": "postcss ./src/_assets/css/stylesheet.css -o ./_dev/assets/stylesheet.css --watch --verbose",
     "build": "eleventy --output=./build",
     "dev": "eleventy --output=./_dev --serve"
   },
@@ -25,6 +25,7 @@
     "autoprefixer": "^10.0.1",
     "postcss": "^8.1.1",
     "postcss-cli": "^8.1.0",
+    "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0"
   }
 }
