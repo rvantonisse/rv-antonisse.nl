@@ -5,8 +5,8 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "build": "eleventy --input=./src",
-    "dev": "eleventy --input=./src --output=./_dev --serve"
+    "build": "eleventy --output=./build",
+    "dev": "eleventy --output=./_dev --serve"
   },
   "repository": {
     "type": "git",
