@@ -5,9 +5,11 @@
   "private": true,
   "main": "index.js",
   "scripts": {
-    "build:css": "postcss ./src/_assets/css/stylesheet.css -o ./_dev/assets/stylesheet.css --watch --verbose",
-    "build": "eleventy --output=./build",
-    "dev": "eleventy --output=./_dev --serve"
+    "build:css": "postcss ./src/_assets/css/stylesheet.css -o ./build/assets/stylesheet.css",
+    "build:html": "eleventy --output=./build",
+    "dev:css": "postcss ./src/_assets/css/stylesheet.css -o ./_dev/assets/stylesheet.css --watch --verbose",
+    "dev:html": "eleventy --output=./_dev --serve",
+    "dev": "run-p dev:*"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
     "autoprefixer": "^10.0.1",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.1.1",
     "postcss-cli": "^8.1.0",
     "postcss-import": "^12.0.1",

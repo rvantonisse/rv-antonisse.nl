@@ -1,5 +1,7 @@
-
 body {
   color: #333;
-  background-color: #33c;
+  font-size: 1em;
+  letter-spacing: 0.063em;
+  line-height: 1.5;
+  background-color: #cc9;
 }
