@@ -7,8 +7,9 @@
   "scripts": {
     "build:css": "postcss ./src/_assets/css/stylesheet.css -o ./build/assets/stylesheet.css",
     "build:html": "eleventy --output=./build",
+    "dev:server": "svrx",
     "dev:css": "postcss ./src/_assets/css/stylesheet.css -o ./_dev/assets/stylesheet.css --watch --verbose",
-    "dev:html": "eleventy --output=./_dev --serve",
+    "dev:html": "eleventy --output=./_dev --watch",
     "dev": "run-p dev:*"
   },
   "repository": {
@@ -24,6 +25,7 @@
   "homepage": "https://rv-antonisse.nl",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.0",
+    "@svrx/cli": "^1.1.2",
     "autoprefixer": "^10.0.1",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.1.1",
